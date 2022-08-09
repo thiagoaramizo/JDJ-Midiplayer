@@ -20,16 +20,3 @@ botoes.forEach( (botao, index) => {
     })
 })
 
-var tocar = false
-
-document.querySelector("#tocar").addEventListener("click", () => {
-    const botao_pom = document.querySelector(".tecla_pom")  
-    tocar = !tocar   
-    if( tocar ){
-        setInterval(() => {
-            botao_pom.click()
-        }, 1000)
-    } else return false
-})
-    
-
