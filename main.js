@@ -10,9 +10,11 @@ botoes.forEach( (botao, index) => {
         somTocando.play()
         teclado.classList.add("teclado-ativo")
         marca.classList.add("marca-ativa")
+        botao.classList.add("ativa")
         setTimeout(() => {
             teclado.classList.remove("teclado-ativo")
             marca.classList.remove("marca-ativa")
+            botao.classList.remove("ativa")
         }, 150)
         somTocando.addEventListener( 'ended' , () => {
             somTocando.remove()
